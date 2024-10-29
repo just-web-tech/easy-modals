@@ -1,0 +1,63 @@
+{
+  "name": "@just-web-tech/easy-modals",
+  "version": "1.0.0",
+  "description": "A simple and convenient solution for managing the state of modals",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "author": "Dmitry Gaskarov <Mystache@yandex.ru>",
+  "keywords": [
+    "modal",
+    "react",
+    "state",
+    "ui",
+    "management",
+    "store"
+  ],
+  "homepage": "https://github.com/just-web-tech/easy-modals#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-web-tech/easy-modals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-web-tech/easy-modals/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "check:types": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.2.0",
+    "@types/node": "22.13.5",
+    "@types/react": "18.3.12",
+    "jsdom": "26.0.0",
+    "prettier": "3.5.2",
+    "typescript": "5.7.3",
+    "vite": "6.1.1",
+    "vite-plugin-dts": "4.5.0",
+    "vitest": "3.0.6"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}
